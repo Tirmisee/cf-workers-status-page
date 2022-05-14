@@ -48,7 +48,7 @@ monitors:
     url: 'https://www.averdoc.com/en/'
     method: GET
     expectStatus: 200,
-    followRedirect: false
+    followRedirect: true
     linkable: false
 
 
