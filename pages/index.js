@@ -74,7 +74,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <h1 className="ml-4 text-3xl">Status</h1>
           </div>
           <div className="flex flex-row items-center">
-            <MonitorFilter active={slash} callback={filterByTerm} />
+            
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
