@@ -27,7 +27,7 @@ monitors:
   - id: app-averdoc-com
     name: Web Application - app.averdoc.com
     description: 'Web Application'
-    url: 'https://app.averdoc.com'
+    url: 'https://app.averdoc.com/'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -36,7 +36,7 @@ monitors:
   - id: www-averdoc-com
     name: www.averdoc.com
     description: 'Averdoc.com Website'
-    url: 'https://www.averdoc.com/en'
+    url: 'https://www.averdoc.com/en/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
