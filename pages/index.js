@@ -44,6 +44,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   return (
     <div className="min-h-screen">
       <Head>
+        <link rel="icon" href="https://www.averdoc.com/favicon.svg" sizes="any" type="image/svg+xml">
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
         <script>
