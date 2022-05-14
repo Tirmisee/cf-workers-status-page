@@ -47,7 +47,6 @@ monitors:
     description: 'Averdoc.com Website'
     url: 'https://www.averdoc.com/en/'
     method: GET
-    expectStatus: 200,
-    linkable: true
+    expectStatus: 200
 
 
