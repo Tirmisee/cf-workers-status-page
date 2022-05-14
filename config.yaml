@@ -48,6 +48,6 @@ monitors:
     url: 'https://www.averdoc.com/en/'
     method: GET
     expectStatus: 200,
-    linkable: false
+    linkable: true
 
 
