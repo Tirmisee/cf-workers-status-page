@@ -92,7 +92,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <a href="https://www.averdoc.com/">
               Averdc.com{' '}
             </a>
-            &{' '}
             
           </div>
           
