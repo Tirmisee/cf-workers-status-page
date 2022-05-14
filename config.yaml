@@ -48,12 +48,5 @@ monitors:
     url: 'https://www.averdoc.com/en/index.html'
     method: GET
     expectStatus: 200
-    
-  - id: homepage
-    name: www2.averdoc.com
-    description: 'Averdoc.com Website'
-    url: 'https://www.averdoc.com/en/'
-    method: GET
-    expectStatus: 200
 
 
