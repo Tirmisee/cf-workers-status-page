@@ -44,7 +44,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   return (
     <div className="min-h-screen">
       <Head>
-        <link rel="icon" href="https://www.averdoc.com/favicon.svg" sizes="any" type="image/svg+xml">
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
         <script>
@@ -75,7 +74,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <h1 className="ml-4 text-3xl">Status</h1>
           </div>
           <div className="flex flex-row items-center">
-            {typeof window !== 'undefined' && <ThemeSwitcher />}
             <MonitorFilter active={slash} callback={filterByTerm} />
           </div>
         </div>
