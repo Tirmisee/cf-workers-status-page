@@ -70,7 +70,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
         <div className="flex flex-row justify-between mt-4 text-sm">
           <div>
             <a href="https://www.averdoc.com/">
-              Averdc.com{' '}
+              Averdoc.com{' '}
             </a>
             
           </div>
