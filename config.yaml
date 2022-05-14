@@ -45,10 +45,10 @@ monitors:
   - id: www-averdoc-com
     name: www.averdoc.com
     description: 'Averdoc.com Website'
-    url: 'https://www.averdoc.com/'
+    url: 'https://www.averdoc.com/en'
     method: GET
     expectStatus: 200,
-    followRedirect: true
-    linkable: true
+    followRedirect: false
+    linkable: false
 
 
