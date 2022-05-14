@@ -40,7 +40,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
     
   - id: www-averdoc-com
     name: www.averdoc.com
@@ -48,6 +48,6 @@ monitors:
     url: 'https://www.averdoc.com/en/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
 
