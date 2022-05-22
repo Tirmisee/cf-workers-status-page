@@ -3,7 +3,7 @@ settings:
   url: 'https://status.averdoc.com' # used for Slack messages
   logo: 'https://www.averdoc.com/logo.svg' # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  collectResponseTimes: false # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
