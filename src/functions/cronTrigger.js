@@ -54,6 +54,7 @@ export async function processCronTrigger(event) {
     const requestStartTime = Date.now()
     const checkResponse = await fetch(monitor.url, init)
     const requestTime = Math.round(Date.now() - requestStartTime)
+    
 
     // Determine whether operational and status changed
     const monitorOperational =
@@ -75,7 +76,14 @@ export async function processCronTrigger(event) {
       typeof SECRET_SLACK_WEBHOOK_URL !== 'undefined' &&
       SECRET_SLACK_WEBHOOK_URL !== 'default-gh-action-secret'
     ) {
-      event.waitUntil(notifySlack(monitor, monitorOperational))
+      
+      let retmsg = ''
+      
+      if(checkResponse.status==400) {
+        retmsg = await checkResponse.json(); //Read bad request http body
+      }
+      
+      event.waitUntil(notifySlack(monitor, monitorOperational, retmsg))
     }
 
     // Send Telegram message on monitor change
