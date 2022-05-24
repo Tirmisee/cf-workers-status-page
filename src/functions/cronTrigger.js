@@ -83,7 +83,7 @@ export async function processCronTrigger(event) {
         retmsg = await checkResponse.json(); //Read bad request http body
       }
       
-      event.waitUntil(notifySlack(monitor, monitorOperational, retmsg))
+      event.waitUntil(notifySlack(monitor, monitorOperational, checkResponse.status, retmsg))
     }
 
     // Send Telegram message on monitor change
