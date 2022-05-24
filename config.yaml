@@ -18,7 +18,7 @@ monitors:
   - id: webapi-averdoc-com # unique identifier
     name: API (asia-southeast1 region)
     description: 'Core API, Database, and storage.' # default=empty
-    url: 'https://help.averdoc.com/test/getgeo' # URL to fetch
+    url: 'https://webapi.averdoc.com/api/live' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
