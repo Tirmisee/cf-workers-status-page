@@ -23,7 +23,7 @@ export async function setKV(key, value, metadata, expirationTtl) {
   return KV_STATUS_PAGE.put(key, value, { metadata, expirationTtl })
 }
 
-export async function notifySlack(monitor, operational, retmsg) {
+export async function notifySlack(monitor, operational, statuscode, retmsg) {
   const payload = {
     attachments: [
       {
@@ -36,7 +36,7 @@ export async function notifySlack(monitor, operational, retmsg) {
               type: 'mrkdwn',
               text: `Monitor *${
                 monitor.name
-              }* changed status to *${getOperationalLabel(operational)}* ${retmsg}`,
+              }* changed status to *${getOperationalLabel(operational)}* - *${statuscode}* ${retmsg}`,
             },
           },
           {
