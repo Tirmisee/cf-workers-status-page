@@ -45,7 +45,7 @@ monitors:
   - id: www-averdoc-com
     name: www.averdoc.com
     description: 'Averdoc.com Website'
-    url: 'https://www.averdoc.com/en/'
+    url: 'https://www.averdoc.com/live.html'
     method: GET
     expectStatus: 200
 
